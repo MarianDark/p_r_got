@@ -1,0 +1,200 @@
+@import url("https://db.onlinewebfonts.com/c/97c4b25dc74e0ab045154e75a8fdd69d?family=Game+of+Thrones");
+
+@font-face {
+  font-family: "Game of Thrones";
+  src: url("https://db.onlinewebfonts.com/t/97c4b25dc74e0ab045154e75a8fdd69d.eot");
+  src: url("https://db.onlinewebfonts.com/t/97c4b25dc74e0ab045154e75a8fdd69d.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/97c4b25dc74e0ab045154e75a8fdd69d.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/97c4b25dc74e0ab045154e75a8fdd69d.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/97c4b25dc74e0ab045154e75a8fdd69d.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/97c4b25dc74e0ab045154e75a8fdd69d.svg#Game of Thrones")
+      format("svg");
+}
+body {
+  font-family: "Game of Thrones", sans-serif; /* Aplicar la fuente 'Game of Thrones' */
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  /* font-synthesis: none; */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* VISTA MOVIL */
+@media only screen and (max-width: 768px) {
+  /* Agrega aquí tus estilos para dispositivos móviles */
+  body {
+    background-color: pink;
+  }
+}
+
+/* TEMA CLARO */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  body {
+      background-size: cover; /* Ajusta el tamaño del fondo */
+      background: #D0E4F5 url("https://cdn.wallpapersafari.com/95/30/9kJrth.jpg") no-repeat fixed 50% 50%; /* Evita que el fondo se repita */
+  }
+
+  /* Estilos CSS para la imagen de cabecera */
+  .header {
+    text-align: center; /* Centra horizontalmente el contenido */
+    margin-top: 0px; /* Espacio superior */
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    height: 50%; /* La altura se ajustará automáticamente según el ancho para mantener las proporciones originales */
+    max-width: 5000px; /* Ancho máximo de la imagen */
+  }
+
+}
+.card {
+  display: inline;
+  flex-direction: column;
+  background-color: #f9f8f7;
+  border-radius: 10px;
+  overflow: hidden; /* Evitar que la imagen se desborde de la tarjeta */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border: 15px ridge #fbfdfd;
+  border-radius: 40px 40px 40px 40px;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+  }
+
+.card:hover {
+  transform: translateY(-20px); /* Mover la tarjeta hacia arriba */
+  box-shadow: 0px 0px 100px rgba(251, 250, 250, 0.1); /* Añadir sombra suave */
+  background: rgb(138, 138, 138);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  border: 5px groove #050505;
+  width: 400px;
+  height: 300px;
+  margin-left: -30%; 
+}
+
+.card h2 {
+  font-size: 26px;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  word-spacing: 250px;
+  color: #000000;
+  text-decoration: underline solid rgb(3, 3, 3);
+  text-align: center;
+}
+
+.card p {
+  font-size: 15px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.card p1 {
+  font-size: 20px;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.characters-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 80px;
+}
+.App {
+  text-align: center;
+  font-family: "Game of Thrones";
+  color: #0a0a0a;
+}
+
+.title {
+  color: rgb(10, 10, 10); 
+  text-shadow: 2px 0 0px #8a8789, 
+  3px 2px 0px rgba(8, 8, 8, 0.5), 
+  3px 0 3px #252525, 
+  5px 0 3px #333333, 
+  6px 2px 3px rgba(51, 51, 51, 0.5), 
+  6px 0 9px #8b8989, 
+  8px 0 9px #9c9b9a, 
+  9px 2px 9px rgba(10, 7, 6, 0.5), 
+  9px 0 18px #e6e5e1, 
+  11px 0 18px #3a3a3a, 
+  12px 2px 18px rgba(17, 17, 16, 0.5), 
+  12px 0 30px #676764, 
+  14px 0 30px #5f605e, 
+  15px 2px 30px rgba(94, 94, 93, 0.5), 
+  15px 0 45px #6a6b69, 
+  17px 0 45px #1f1f1f, 
+  17px 2px 45px rgba(26, 27, 26, 0.5), 
+  2px 2px 2px rgba(63,64,63,0);
+  color: #080808;
+  background: #1fa1c871;
+  
+}
+
+/* Estilos para el label */
+label {
+  color: rgb(10, 10, 10); 
+  text-shadow: 2px 0 2px #8a8789, 
+  3px 2px 0px rgba(8, 8, 8, 0.5), 
+  3px 0 3px #252525, 
+  5px 0 3px #333333, 
+  6px 2px 3px rgba(51, 51, 51, 0.5), 
+  6px 0 9px #8b8989, 
+  8px 0 9px #9c9b9a, 
+  9px 2px 9px rgba(10, 7, 6, 0.5), 
+  9px 0 18px #e6e5e1, 
+  11px 0 18px #3a3a3a, 
+  12px 2px 18px rgba(17, 17, 16, 0.5), 
+  12px 0 30px #676764, 
+  14px 0 30px #5f605e, 
+  15px 2px 30px rgba(94, 94, 93, 0.5), 
+  15px 0 45px #6a6b69, 
+  17px 0 45px #1f1f1f, 
+  17px 2px 45px rgba(26, 27, 26, 0.5), 
+  2px 2px 2px rgba(63,64,63,0);
+  color: #080808;
+  background: #1fa1c871;
+
+}
+
+/* Estilos para el input */
+input {
+  padding: 10px; /* Espaciado interno */
+  border: 2px solid #060606; /* Borde negro */
+  border-radius: 10px; /* Bordes redondeados */
+  width: 15%; /* Ancho completo del contenedor */
+  box-sizing: border-box; /* Incluir el padding y el borde en el ancho total */
+}
+button {
+  padding: 10px 20px; /* Espaciado interno */
+  background-color: #848785; /* Color de fondo */
+  color: #040404; /* Color del texto */
+  border-radius: 10px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor al pasar por encima */
+  font-weight: bold; /* Texto en negrita */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilo para el botón al pasar el cursor */
+button:hover {
+  background-color: #0056b3; /* Cambio de color al pasar el cursor */
+
+}
